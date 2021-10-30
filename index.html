@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="main">
+    <div class="content-title">
+        <h1 id="title">SURVEY FORM</h1>
+        <p id="desciption"> Thank you for taking the time to do the survey</p>
+    </div>
+    <div class="main-content">
+    <form action="#" id="survey-form">
+        
+        <label for="name"  id="name-label"> Name</label><br>
+        <input id="name" type="text" placeholder="Enter your name"><br>
+        <br>
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" required placeholder="Enter your Email"><br>
+        <br>
+        <label for="number" id="number-label">Age(optional)</label><br>
+        <input type="number" id="number" required placeholder="Age" min="10" max="99"><br>
+        <br>
+        <label for="dropdown">Which option describes your current role?</label><br>
+        <select id="dropdown">
+        <br> 
+            <option class="option-choice"value="Student">Student</option>
+            <option class="option-choice"value="full-time-gob">Full Time Job</option>
+            <option class="option-choice"value="full-time-leaner">Full Time Learner</option>
+            <option class="option-choice"value="notsay">Prefer not to say</option>
+            <option class="option-choice"value="other">Other</option>
+               
+        </select><br>
+        <br>
+        <label id="radio-btn"for="">Desired salary upon graduation</label>
+        <br>
+        <input type="radio" name="recommend" id="definitely" value="low">
+        <label for="definitely">300-1000$</label>
+        <br>
+        <input type="radio" name="recommend" id="maybe" value="higher">
+        <label for="maybe">1000-2000$</label>
+       <br>
+        <input type="radio" name="recommend" id="not-sure" value="highest">
+        <label for="not-sure">2000$+</label><br>
+        <br>      
+       <label id="checkbox"for="">What position do you want to work in the future?</label><br>
+       <input type="checkbox" id="fe" value="FE">
+       <label for="fe">Fron-end Projects</label>
+       <br>
+       <input type="checkbox" id="be" value="BE">
+       <label for="be">Back-end Projects</label>
+       <br>
+       <input type="checkbox" id="ds" value="DS">
+       <label for="ds">Data Scienctist</label>
+       <br>
+       <input type="checkbox" id="de" value="DE">
+       <label for="de">Data Engineer</label>
+       <br>
+       <input type="checkbox" id="ai" value="AI">
+       <label for="ai">AI Engineer</label>
+       <br>
+       <input type="checkbox" id="cybersecurity" value="cybersec">
+       <label for="cybersecurity">Cybersecurity</label><br>
+       <br>
+       <label for="suggestions">Any plans for the future?</label><br>
+       <textarea name="textarea" id="suggestions" cols="30" rows="10" placeholder="Enter your comment here..."></textarea><br>
+       <br>
+       <button id="submmit">
+           Summit
+       </button>
+       
+        
+        </form>
+    </div>
+</div>
+</body>
+</html>
